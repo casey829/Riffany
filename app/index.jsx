@@ -4,6 +4,7 @@ import '@/global.css';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '@/constants/index'; 
 import  CustomButton from '@/components/CustomButton'
+import 'react-native-url-polyfill/auto'
 
 export default function HomeScreen() {
   return (

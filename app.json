@@ -1,15 +1,16 @@
 {
   "expo": {
-    "name": "Aoorraa",
-    "slug": "Aoorraa",
+    "name": "Riffany",
+    "slug": "Riffany",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "aora",
+    "scheme": "riffany",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package":"com.Riffany.Riffany"
     },
     "android": {
       "adaptiveIcon": {
