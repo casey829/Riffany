@@ -1,5 +1,5 @@
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Link } from 'expo-router';
+import { Link,router,Redirect } from 'expo-router';
 import '@/global.css';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '@/constants/index'; 
@@ -36,7 +36,7 @@ export default function HomeScreen() {
           </Text>
         <CustomButton 
            title='Continue with Email'
-           handlePress={() => {}}
+           handlePress={() => router.push('/(auth)/sign-in')}
            containerStyles ="w-full mt-7"
         />  
         </View>
