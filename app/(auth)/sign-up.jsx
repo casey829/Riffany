@@ -27,6 +27,9 @@ const submit = async  () => {
     const result = await createUser(form.email, form.password, form.username)
 
     //set it to globalState
+    setUser(result);
+    setIsLogged(true)
+    
     router.replace('/home')
     
   } catch (error) {

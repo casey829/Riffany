@@ -27,6 +27,11 @@ const [isSubmitting, setIsSubmitting] = useState(false)
      await signIn(form.email, form.password)
  
      //set it to globalState
+     const result = await getCreateUser
+     setUser(result);
+     setIsLogged(true);
+
+     Alert.alert("Success","User signed in Successfully")
      router.replace('/home')
      
    } catch (error) {
