@@ -5,11 +5,12 @@ import  {images}  from '../../constants'
 import SearchInput from '../../components/SearchInput'
 import Trending from '../../components/Trending'
 import EmptyState from '../../components/EmptyState'
-import { getAllPosts } from '../../lib/appwrite'
+import { getAllPosts, getLatestPosts } from '../../lib/appwrite'
 import useApprwite from '../../lib/useAppwrite'
 import VideoCard from '../../components/VideoCard'
 
 const Home = () => {
+  const { data: latestPosts} = useApprwite(getLatestPosts)
    const { data: posts, refetch} = useApprwite(getAllPosts)
    const [refreshing, setRefreshing] = useState(false)
 
@@ -53,7 +54,7 @@ const Home = () => {
          <View className='w-full flex-1 pt-5 pb-8'>
             <Text className='text-white'>Latest Videos</Text>
             <Trending 
-               posts={[{id: 1},{id:2},{id:3}] ?? []}
+               posts={ latestPosts ?? []}
             />
          </View>
         </View>
