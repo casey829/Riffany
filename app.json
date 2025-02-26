@@ -10,7 +10,7 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "package":"com.Riffany.Riffany"
+      "package": "com.Riffany.Riffany"
     },
     "android": {
       "adaptiveIcon": {
@@ -33,7 +33,9 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-video",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
